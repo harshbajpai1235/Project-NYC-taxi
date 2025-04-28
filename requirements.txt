@@ -1,0 +1,6 @@
+Flask
+googlemaps
+python-dotenv
+joblib
+pandas
+numpy
