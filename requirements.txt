@@ -4,3 +4,4 @@ python-dotenv
 joblib
 pandas
 numpy
+gdown
