@@ -1,9 +1,20 @@
+import os
+import gdown
 import joblib
 import pandas as pd 
 
-# Loading the pre-trained model
-rf_model = joblib.load('rf_full_model.pkl')
 
+# Define model URL (replace YOUR_FILE_ID with your actual Google Drive file ID)
+model_url = "https://drive.google.com/uc?id=1wiktW0s0lQZZbMlEYY6FzxwVIxNtR0CI"
+model_path = 'rf_full_model.pkl'
+
+# Check if model file exists, if not, download it
+if not os.path.exists(model_path):
+    print("Downloading model from Google Drive...")
+    gdown.download(model_url, model_path, quiet=False)
+
+# Loading the pre-trained model
+rf_model = joblib.load(model_path)
 # Defining preprocessing pipeline
 def preprocess_input(df):
     # Selecting required columns
