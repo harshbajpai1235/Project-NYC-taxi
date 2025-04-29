@@ -6,6 +6,7 @@ import googlemaps
 import pandas as pd
 import numpy as np
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from dotenv import load_dotenv
 from zone_id_mapping import zone_id_mapping
 from fare_predictor import predict_fare, estimate_extra, estimate_congestion_surcharge, estimate_tolls_amount, estimate_mta_tax, estimate_improvement_surcharge
@@ -121,7 +122,7 @@ def predict():
         trip_distance = leg["distance"]["value"] / 1609.34
         trip_duration = leg["duration"]["value"] / 60
 
-        now = datetime.now()
+        now = datetime.now(ZoneInfo("America/New_York"))
         pickup_hour = now.hour
         pickup_dayofweek = now.weekday()
         pickup_month = now.month
