@@ -15,7 +15,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-gmaps = googlemaps.Client(key=os.getenv("GOOGLE_MAPS_API_KEY"))
+gmaps = googlemaps.Client(key=os.getenv("GOOGLE_MAPS_API_BACKEND_KEY"))
 
 # Taxi Zone Setup
 zone_name_to_id = {name: id for name, id in zone_id_mapping.items()}
@@ -28,7 +28,7 @@ for _, row in taxi_zones_df.iterrows():
 
 @app.route("/")
 def home():
-    google_maps_api_key = os.getenv("GOOGLE_MAPS_API_KEY")
+    google_maps_api_key = os.getenv("GOOGLE_MAPS_API_FRONTEND_KEY")
     return render_template("index.html", google_maps_api_key=google_maps_api_key)
 
 def haversine_distance(lat1, lon1, lat2, lon2):
