@@ -62,6 +62,10 @@ RatecodeID, payment_type, PULocationID, DOLocaitonID
 ✅ The resulting model size is just 3.8 MB while retaining high accuracy.<br>
 - Model Hosting: The compressed model is hosted on Render.com
 
+## 📸 Screenshots
+
+![Homepage](images/screenshot.png)
+
 ## 🔍 Analysis Highlights
 
 - Peak fares and long-distance rides occur around 5AM (likely airport drop-offs)
