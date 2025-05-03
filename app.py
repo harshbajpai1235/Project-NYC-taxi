@@ -1,4 +1,4 @@
-# Final Fully Fixed app.py
+
 
 from flask import Flask, render_template, request, jsonify
 import os
@@ -189,9 +189,9 @@ def predict():
             }
         }
 
-        # --- DEBUGGING LINE ---
+        #  DEBUGGING LINE
         print("DEBUG /predict →", payload)
-        # alternatively: app.logger.debug("DEBUG /predict → %s", payload)
+       
 
         return jsonify(payload)
 
