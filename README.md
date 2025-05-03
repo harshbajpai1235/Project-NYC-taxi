@@ -64,7 +64,7 @@ RatecodeID, payment_type, PULocationID, DOLocaitonID
 
 ## 📸 Screenshots
 
-![Homepage](images/screenshot.png)
+![Homepage](/screenshot.png)
 
 ## 🔍 Analysis Highlights
 
