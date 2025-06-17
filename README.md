@@ -115,4 +115,4 @@ Google maps API key is stored securely using a .env fiel (not uploaded to Github
 
 **Harsh Bajpai** <br>
 Master's in Statistical Data Science<br>
-[LinkedIn](www.linkedin.com/in/harsh-bajpai22) <br>
+[LinkedIn](https://www.linkedin.com/in/harsh-bajpai22/) <br>
