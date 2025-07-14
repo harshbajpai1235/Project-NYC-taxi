@@ -6,4 +6,4 @@ pandas
 numpy
 gdown
 gunicorn
-scikit-learn
+scikit-learn==1.5.1
